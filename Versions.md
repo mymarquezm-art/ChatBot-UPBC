@@ -1,0 +1,9 @@
+
+Version	            |Action Performed                           |   Description
+v1.0                - v4.0	Initial UI & Architecture           Set up the basic Streamlit interface. Configured the page layout, title, sidebar, and integrated the UPBC logo. Implemented the basic chat input functionality using Streamlit's session state.
+v5.0                - v8.0	LLM Integration (Gemini)            Integrated google-generativeai and langchain-google-genai. Configured the API keys and established the core connection to the Gemini model to enable basic prompt-response interactions.
+v9.0                - v11.0	RAG System & Document Processing    Added functionality to process local documents (using pypdf and langchain text splitters). Implemented the logic to extract and chunk text from the UPBC knowledge base for the Retrieval-Augmented Generation (RAG) pipeline.
+v12.0               - v13.0	Vector Database (ChromaDB)	        Integrated chromadb and sentence-transformers to generate and store document embeddings. Connected the retriever to the Gemini model so the chatbot could answer questions based specifically on the loaded UPBC documents.
+v14.0	            Analytics & Metrics Tracking	            Developed an internal tracking system to log user interactions, query response times, and usage metrics, storing them in metrics_db.json. Added pandas and plotly to visualize these statistics in the dashboard.
+v15.0	            Cloud Patching (Local)	                    Finalized the core code in castone_geminiH_v15.py. Added the crucial pysqlite3 system override to ensure ChromaDB compatibility with Linux-based cloud environments.
+v16.0	            GitHub Integration & Cloud Deployment	    Renamed the main script to streamlit_app.py for cloud standardization. Pushed the repository to the main branch on GitHub, sanitized the requirements.txt dependencies, and successfully deployed the live application on Streamlit Community Cloud.
