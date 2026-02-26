@@ -1,0 +1,11 @@
+# Colores institucionales UPBC
+primaryColor = "#4A148C"          # Púrpura principal
+backgroundColor = "#FFFFFF"       # Blanco de fondo
+secondaryBackgroundColor = "#F3E5F5" # Púrpura muy claro para barras laterales
+textColor = "#212121"             # Gris oscuro para lectura
+font = "sans serif"
+
+[server]
+headless = true
+port = 8501
+enableCORS = false
