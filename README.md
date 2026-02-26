@@ -48,23 +48,28 @@ e) LLM Execution: The prompt is processed by gemini-flash-latest with a mirrorin
 ### Running the App
 To start the web interface:
 ```bash
-streamlit run castone_geminiH_v15.py
+streamlit run streamlit_app.py
 
 📦 requirements.txt
 The following dependencies are required to run the environment effectively:
 
-Plaintext
 streamlit==1.32.0
 langchain==0.1.12
 langchain-google-genai==1.0.1
 langchain-community==0.0.28
+langchain-openai
+langchain-huggingface
+langchain-chroma
+langchain-text-splitters
 chromadb==0.4.24
 sentence-transformers==2.6.0
 pypdf==4.1.0
-plotly==5.19.0
+plotly
 pandas==2.2.1
 tenacity==8.2.3
 google-generativeai==0.4.1
+pysqlite3-binary
+python-dotenv
 
 🧪 Test Results & Metrics
 During the development phase, the following performance benchmarks were observed:
@@ -72,5 +77,6 @@ During the development phase, the following performance benchmarks were observed
 Mean Latency: ~2.5 - 4.2 seconds per query (Model: Gemini Flash).
 
 Retrieval Accuracy: High (>90%) for documents with clear headings; moderate for complex tables.
+
 
 Resilience: Successfully handled ResourceExhausted (429) errors using exponential backoff via the tenacity library.
