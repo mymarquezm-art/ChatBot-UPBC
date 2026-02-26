@@ -1,3 +1,5 @@
+🚀 **Prueba la aplicación en vivo aquí:** [(https://chatbot-upbc-edbmdgnfxbwhnjzjqfasrb.streamlit.app/)]
+
 Chatbot UPBC: Technical Documentation
 A High-Performance RAG-Based Technical Query Engine
 
@@ -80,3 +82,4 @@ Retrieval Accuracy: High (>90%) for documents with clear headings; moderate for 
 
 
 Resilience: Successfully handled ResourceExhausted (429) errors using exponential backoff via the tenacity library.
+
