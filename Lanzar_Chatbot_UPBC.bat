@@ -9,7 +9,7 @@ import time
 # Directorio base del proyecto
 BASE_DIR = r"C:\Asistente_UPBC"
 # Nombre de tu archivo principal (debe estar en BASE_DIR)
-ARCHIVO_APP = "castone_geminiH_v15.py"
+ARCHIVO_APP = "streamlit_app.py"
 
 # Entorno Virtual y Temporales
 VENV_DIR = os.path.join(BASE_DIR, "env_chatbot")
@@ -102,3 +102,4 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"ERROR CRÍTICO: {e}")
         input("Presiona Enter para salir...")
+
