@@ -14,6 +14,7 @@ import json
 import pandas as pd
 import html
 import base64
+import plotly.express as px
 import plotly.graph_objects as go
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
